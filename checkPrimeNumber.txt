@@ -1,0 +1,23 @@
+
+puts "enter starting Number"
+start=gets.chomp.to_i
+puts "enter ending Number"
+ending=gets.chomp.to_i
+
+while(start<=ending)
+  
+  flag =true
+  x=2
+  while(x<=start/2)
+    if (start%x==0)
+      flag=false
+      break
+    end
+    x=x+1
+  end
+  
+  if flag
+    puts "prime Number "+ start.to_s
+  end
+  start=start+1
+end
